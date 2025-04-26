@@ -19,7 +19,7 @@ for i in range(0, len(questions)):
     user_answer = input("Enter your correct answer (a/b/c/d): ").lower().strip()
     if user_answer not in ["a","b","c","d"]:
         print("You entered an invalid character. You must select options between a/b/c/d")
-        
+        continue
     if(user_answer==correct_answer):
         print(f"Correct! You won Rs: {levels[i]}")
         amount_won+=levels[i]
