@@ -3,7 +3,7 @@ import string
 
 
 random_chars = ''.join(random.choices(string.ascii_letters, k=3))
-modidfied_string = []
+modified_string = []
 
 # print(random_chars)
 def encode_string(string_to_encode):
@@ -18,9 +18,9 @@ def encode_string(string_to_encode):
             replaced_str=encoded_list_string[i].replace(two_letter_string_to_replace,two_letter_string) 
        
         # add random characters to the string
-        modidfied_string.append(replaced_str if len(encoded_list_string[i])<3 else random_chars+encoded_list_string[i]+random_chars) 
+        modified_string.append(replaced_str if len(encoded_list_string[i])<3 else random_chars+encoded_list_string[i]+random_chars) 
         
-    return " ".join(modidfied_string)
+    return " ".join(modified_string)
 
 
 string_to_encode="Hello World! Today is a good day"
