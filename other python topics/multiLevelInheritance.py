@@ -17,6 +17,9 @@ class Parent(GrandParent):
     def talk(self):
         return f"Parent: {self.name} is talking at age {self.age}" 
     
+    def move(self):
+        return "Moving faster than grandparent"
+    
     
 class Child(Parent):
     def __init__(self,name,age,grade):
