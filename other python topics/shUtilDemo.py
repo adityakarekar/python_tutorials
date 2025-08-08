@@ -15,7 +15,6 @@ import os
 # filePathToRemove=os.path.join(os.getcwd(),"copyFolder2")
 
 # shutil.rmtree(filePathToRemove)
-os.remove("file.txt")
-
+# os.remove("file.txt")
 
 
